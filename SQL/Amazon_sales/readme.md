@@ -9,9 +9,8 @@ This project involves exploring, cleaning, and analysing an Amazon sales dataset
 2. [Dataset Overview](#dataset-overview)
 3. [Objectives](#objectives)
 4. [Data Cleaning and Preprocessing](#data-cleaning-and-preprocessing)
-5. [Analysis and Insights](#analysis-and-insights)
-6. [Visualisations](#visualisations)
-7. [Tools and Technologies](#tools-and-technologies)
+5. [Tools and Technologies](#tools-and-technologies)
+6. [Key Insights](#key-insights)
 
 
 ---
@@ -24,8 +23,9 @@ The dataset provides a detailed view of Amazon sales, including product informat
 
 ## **Dataset Overview**
 
-- **Source**: [Kaggle]([https://kaggle.com](https://www.kaggle.com/datasets/karkavelrajaj/amazon-sales-dataset/data)) (include link if applicable).
+- **Source**: [Kaggle]([https://kaggle.com](https://www.kaggle.com/datasets/karkavelrajaj/amazon-sales-dataset/data)).
 - **File Format**: CSV.
+- **Row count**: 1465
 - **Columns**:
   - `product_id`: Unique identifier for the product.
   - `product_name`: Name of the product.
@@ -36,6 +36,8 @@ The dataset provides a detailed view of Amazon sales, including product informat
   - `discount_percentage`: Percentage discount applied.
   - `rating_count`: Number of customer ratings.
   - `rating`: Average customer rating.
+  - `main_category`: Main category of item (eg Home and Kitchen)
+  - `item`: Item type: (eg Electric Grinder)
 
 ---
 
@@ -45,7 +47,6 @@ The dataset provides a detailed view of Amazon sales, including product informat
 2. Identify top-performing products in terms of reviews.
 3. Explore the impact of discounts on ratings.
 4. Extract insights on customer behaviour from reviews and ratings.
-5. Create interactive dashboards for visualisation.
 
 ---
 
@@ -54,51 +55,74 @@ The dataset provides a detailed view of Amazon sales, including product informat
 - **Issues Identified**:
   - Presence of currency symbols (`₹`) in price columns.
   - Inconsistent or missing values in certain columns.
-  - Potential duplicates in product or review data.
+  - Duplicates in product or review data.
+  - Changes columns datatypes
 
 - **Steps Taken**:
   - Removed currency symbols and converted prices to numeric.
-  - Cleaned `discount_percentage` and `rating_count` columns for accurate analysis.
-  - Dropped or imputed missing values where necessary.
+  - Added additional 'main_category' and 'item' columns
+  - Dropped duplicates
 
 Python script used for cleaning: [data_cleaning.py](link-to-your-script).
+The resulting dataset contains 1348 rows of data.
+
+
 
 ---
 
-## **Analysis and Insights**
+## Tools and Technologies
+- **Power BI**: For data visualisation and analysis.
+- **PostgreSQL**: For SQL-based data manipulation.
+- **Python**: For initial preprocessing.
 
-### Key Questions Explored:
-1. **Sales Performance**:
-   - Which products generate the most revenue?
-   - Which categories contribute most to sales?
+## Key Insights
 
-2. **Discount Analysis**:
-   - How do discounts affect sales volume?
-   - Which categories/products have the highest discounts?
+1. **Dataset Category Distribution**:
+    - Dataset can be split into 9 main categories:
+    - The dataset is heavily weighted towards electronic items, home and kitchen, and computers/computer accessories.
+  
+      
+![Categories_pie](https://github.com/trow-land/Data-Science/blob/main/SQL/Amazon_sales/plots/category_pie.png)        ![Categories](https://github.com/trow-land/Data-Science/blob/main/SQL/Amazon_sales/plots/category_count.png)
 
-3. **Customer Reviews**:
-   - What are the highest-rated products and categories?
-   - Is there a correlation between the number of reviews and ratings?
+2. **Most Reviewed Items**:
+    - The most reviewed items in this dataset are shown below:
+  
+   
+      ![items](https://github.com/trow-land/Data-Science/blob/main/SQL/Amazon_sales/plots/image_count.png)
+      
+3. **Top Reviewed items and categories**:
+    - The highest reviewed items (4.6/5) were Tablets, in the computers&accessories category.
+    - The top performin category was office products, followed by toys and games.
+    - With the dataset so heavily weighted towards specific categories this comparison could be easily skewed with an individual item. Three of the categories only had 1 item.
+  
+      
+![Top Items](https://github.com/trow-land/Data-Science/blob/main/SQL/Amazon_sales/plots/top_rated_items.png)        ![Top Categories](https://github.com/trow-land/Data-Science/blob/main/SQL/Amazon_sales/plots/best_performing_category.png)
 
----
+4. **Worst rated items**:
+    - The worst rated items were Electric grinders, dust covers and PC Headsets scoring 3.3, 3.4, and 3.5 respectively.
+  
+    ![items](https://github.com/trow-land/Data-Science/blob/main/SQL/Amazon_sales/plots/worst_reviewed_items.png)
+   
 
-## **Visualisations**
+5. **Distribution of Discounts**:
+   - Majority of products fall within the 40-60% discount range.
+   - A distinct spike at 0% discounts.
+   - ![Discount Histogram](https://github.com/trow-land/Data-Science/blob/main/SQL/Amazon_sales/plots/number%20of%20ratings%20per%20discount%20bracket.png)
 
-Interactive dashboards were created to visualise key findings:
-1. **Sales Trends**: Monthly and category-level revenue trends.
-2. **Product Insights**: Top-selling products by revenue and units sold.
-3. **Discount Analysis**: Impact of discounts on sales performance.
+6. **Relationship Between Discounts and Ratings**:
+   - There is a slight negative correlation between discount percentage and ratings.
+   ![Discount vs Rating Scatter Plot](https://github.com/trow-land/Data-Science/blob/main/SQL/Amazon_sales/plots/rating%20vs%20discount%20percentage%23.png)
+  
 
-Tool used: Power BI / Tableau with dataset exported from PostgreSQL.
+7. **Pricing Trends**:
+   - Cheaper products receive more ratings but have more varied scores.
+   - ![Price vs Rating Count](https://github.com/trow-land/Data-Science/blob/main/SQL/Amazon_sales/plots/rating%20vs%20prices.png)
 
----
-
-## **Tools and Technologies**
-
-- **Database**: PostgreSQL
-- **Preprocessing**: Python (Pandas)
-- **Visualisation**: Power BI
-- **Data Source**: Kaggle CSV file
+## Files in Repository
+- `Amazon_Sales_Report.pbix`: Power BI file for this analysis.
+- `queries.sql`: SQL queries used for data preprocessing and exploration.
+- `README.md`: This document.
+- Exported visuals as PNGs 
 
 ---
 
