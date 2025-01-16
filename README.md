@@ -1,55 +1,51 @@
-# Data Science
+# Data Science Portfolio
 
-This space is dedicated to showcasing some of my personal projects and explorations in the field of data science. While much of my work has been done in a professional context and is protected by intellectual property rights, these projects represent my skills and interests in various data science topics.
+Welcome to my Data Science Portfolio! This repository showcases some personal projects that demonstrate my skills in data exploration, analysis, and visualisation, using tools like Python, SQL, and BI platforms. Each project includes a brief description, objectives, tools used, and key insights.  
 
-# Example project:
+---
 
-# Veterans & Disability Data Dashboard
+## Current Projects
 
-![Royal_British_Legion_logo.png](https://github.com/trow-land/Data-Science/blob/main/Royal%20British%20Legion%20Interactive%20Data%20Tool/images/Royal_British_Legion_logo.png)
+### **1. Amazon Sales Data Analysis**  
+- **Overview**: Analysed an Amazon sales dataset to uncover insights into sales performance, pricing trends, and customer reviews.  
+- **Tools**: PostgreSQL, Power BI/Tableau, Python.  
+- **Highlights**:  
+  - Identified top-performing categories and products.  
+  - Explored the relationship between discounts and customer ratings.  
+  - Created visuals for pricing trends and sales distribution.  
 
-## Introduction
 
-This project aimed to create an interactive dashboard using data from the 2021 Census in England & Wales and the 2022 Census in Scotland. The data focuses on veterans and their disabilities in a region, providing insights into the characteristics and needs of veterans and those they live with.
+---
 
-The dashboard utilises various datasets and geographical information to present detailed profiles of veterans, including metrics on disability, health, age, economic activity, and occupation. This tool is designed to be user-friendly and visually appealing, helping stakeholders answer questions such as:
+### **2. Veterans & Disability Data Dashboard**  
+- **Overview**: Developed an interactive dashboard using census data to analyse veteran demographics, health, and economic activity across regions in the UK.  
+- **Tools**: Pandas, GeoPandas, Panel, HoloViews.  
+- **Highlights**:  
+  - Interactive maps to visualise regional distributions.  
+  - Dynamic filtering and customisable visualisations.  
+  - Comparative analysis of veteran vs non-veteran populations.  
+ 
 
-- How many disabled veterans live in Kent?
-- What are the ages and genders of disabled veterans in Powys?
-- How does the proportion and profile of disabled veterans in Plymouth compare to the non-veteran disabled population?
+---
 
-## Features
+## Skills Highlight
+- **Data Analysis**: SQL querying, data cleaning, and preprocessing.  
+- **Visualisation**: Power BI, and Python plotting libraries such as Matplotlib and Seaborn.  
+- **Interactive Dashboards**: Creating user-friendly tools for data exploration.  
 
-- **Interactive Maps**: Visualise the distribution of veterans across different regions.
-- **Customisable Plots**: Generate bar charts and other visualisations based on selected areas and indicators.
-- **Dynamic Filtering**: Select specific demographics and indicators to refine data views.
-- **User-Friendly Interface**: Built with Panel and HoloViews, offering an interactive and intuative navigation experience.
+---
 
-## Usage Guide
+## Repository Structure
+- Each project folder contains:  
+  - Python scripts or SQL queries for analysis.  
+  - Data visualisations and reports.  
+  - Documentation on methodology and findings.  
 
-### Selecting Areas and Indicators
+---
 
-Use the dropdown menus to select specific regions and veteran indicators. The dashboard will dynamically update the maps and plots based on your selections.
+## Upcoming Projects
+Stay tuned for more projects, including advanced analytics and data science applications in business and sales.
 
-![cearphilly disibility plots](https://github.com/trow-land/Data-Science/blob/main/Royal%20British%20Legion%20Interactive%20Data%20Tool/images/caerphilly_disability.png)
+---
 
-### Customizing Data Views
-
-You can filter data by various demographics such as disability status, general health, age, economic activity, and occupation. This allows for detailed analysis and comparison across multiple regions and veteran groups.
-
-![Veteran Ages Cornwall](https://github.com/trow-land/Data-Science/blob/main/Royal%20British%20Legion%20Interactive%20Data%20Tool/images/vet%20ages%20cornwall.png)
-
-![Richmond and Tower Hamlets Economic Activity](https://github.com/trow-land/Data-Science/blob/main/Royal%20British%20Legion%20Interactive%20Data%20Tool/images/richmond_towerhamlets_economic_act_hover.png)
-
-### Interacting with Maps
-
-Click on the map to select a region, and the plots will (in future) update to show data specific to that area. Hover over areas to see detailed information about the number of veterans per region.
-
-![Wiltshite Total Veterans](https://github.com/trow-land/Data-Science/blob/main/Royal%20British%20Legion%20Interactive%20Data%20Tool/images/wiltshire_total_vets.png)
-
-## Datasets
-Veteran data was all obtained from the government 2021 census from the ONS. (eg. [disability data](https://www.ons.gov.uk/datasets/RM143/editions/2021/versions/2))
-
-## Packages
-Pandas, geopandas, hvplot, panel
 
