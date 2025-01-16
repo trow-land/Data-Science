@@ -107,16 +107,23 @@ The resulting dataset contains 1348 rows of data.
 5. **Distribution of Discounts**:
    - Majority of products fall within the 40-60% discount range.
    - A distinct spike at 0% discounts.
-   - ![Discount Histogram](https://github.com/trow-land/Data-Science/blob/main/Amazon_reviews/plots/number%20of%20ratings%20per%20discount%20bracket.png)
+
+     
+   ![Discount Histogram](https://github.com/trow-land/Data-Science/blob/main/Amazon_reviews/plots/number%20of%20ratings%20per%20discount%20bracket.png)
 
 6. **Relationship Between Discounts and Ratings**:
    - There is a slight negative correlation between discount percentage and ratings.
+
+     
    ![Discount vs Rating Scatter Plot](https://github.com/trow-land/Data-Science/blob/main/Amazon_reviews/plots/rating%20vs%20discount%20percentage%23.png)
   
 
 7. **Pricing Trends**:
    - Cheaper products receive more ratings but have more varied scores.
-   - ![Price vs Rating Count](https://github.com/trow-land/Data-Science/blob/main/Amazon_reviews/plots/rating%20vs%20prices.png)
+   - The more expensive products in this dataset all have ratings distributed around 4.25/5.
+  
+     
+     ![Price vs Rating Count](https://github.com/trow-land/Data-Science/blob/main/Amazon_reviews/plots/rating%20vs%20prices.png)
 
 ## Files in Repository
 - `Amazon_Sales_Report.pbix`: Power BI file for this analysis.
