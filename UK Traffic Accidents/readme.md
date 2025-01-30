@@ -51,11 +51,12 @@ The results where possible will be visualised with Matplotlib.
 ## Key Insights
 
 1. **How does the day of the week affect the number of accidents?**:
-    - Saturday 
-    - The dataset is heavily weighted towards electronic items, home and kitchen, and computers/computer accessories.
+    - Accidents are fairly even throughout the week
+    - Most accidents in the UK occur on saturday
+    - Monday is the day with the least accidents
   
       
-![Categories_pie](https://github.com/trow-land/Data-Science/blob/main/Amazon_reviews/plots/category_pie.png)        ![Categories](https://github.com/trow-land/Data-Science/blob/main/Amazon_reviews/plots/category_count.png)
+![Categories_pie](https://github.com/trow-land/Data-Science/blob/main/UK%20Traffic%20Accidents/images/weekday_bar.png)        ![Categories](https://github.com/trow-land/Data-Science/blob/main/UK%20Traffic%20Accidents/images/weekday_pie.png)
 
 2. **Most Reviewed Items**:
     - The most reviewed items in this dataset are shown below:
