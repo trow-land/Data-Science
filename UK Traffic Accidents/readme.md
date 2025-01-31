@@ -8,9 +8,8 @@ This project explores a dataset of UK road traffic accidents between the years 2
 1. [Introduction](#introduction)
 2. [Dataset Overview](#dataset-overview)
 3. [Objectives](#objectives)
-4. [Data Cleaning and Preprocessing](#data-cleaning-and-preprocessing)
-5. [Tools and Technologies](#tools-and-technologies)
-6. [Key Insights](#key-insights)
+4. [Tools and Technologies](#tools-and-technologies)
+5. [Key Insights](#key-insights)
 
 
 ---
@@ -58,52 +57,21 @@ The results where possible will be visualised with Matplotlib.
       
 ![Categories_pie](https://github.com/trow-land/Data-Science/blob/main/UK%20Traffic%20Accidents/images/weekday_bar.png)        ![Categories](https://github.com/trow-land/Data-Science/blob/main/UK%20Traffic%20Accidents/images/weekday_pie.png)
 
-2. **Most Reviewed Items**:
-    - The most reviewed items in this dataset are shown below:
+2. **How does the time of day impact the number of accidents?**:
+    - The line graph below shows that there are two spikes in the number of accidents which coincide with rush hour either side of the working day.
+    - The number of accidents is higher throughout the day than at night.
+    - The accident rate drops off sharply once people arrive at work
   
    
-      ![items](https://github.com/trow-land/Data-Science/blob/main/Amazon_reviews/plots/image_count.png)
+      ![items](https://github.com/trow-land/Data-Science/blob/main/UK%20Traffic%20Accidents/images/time_of_day.png)
       
-3. **Top Reviewed items and categories**:
-    - The highest reviewed items (4.6/5) were Tablets, in the computers&accessories category.
-    - The top performin category was office products, followed by toys and games.
-    - With the dataset so heavily weighted towards specific categories this comparison could be easily skewed with an individual item. Three of the categories only had 1 item.
+3. **How has the total number of accidents changed over time?**:
+    - The number of accidents on britains roads looks to be on a slow downward trend as shown by the trend line
+    - The decline is not very steep, suggesting a slow reduction in accident numbers over the decade.
+    - There are regular fluctuations in accident counts, possibly indicating seasonal trends
   
       
-![Top Items](https://github.com/trow-land/Data-Science/blob/main/Amazon_reviews/plots/top_rated_items.png)        ![Top Categories](https://github.com/trow-land/Data-Science/blob/main/Amazon_reviews/plots/best_performing_category.png)
+![Top Items](https://github.com/trow-land/Data-Science/blob/main/UK%20Traffic%20Accidents/images/accidents%20over%20time.png)    
 
-4. **Worst rated items**:
-    - The worst rated items were Electric grinders, dust covers and PC Headsets scoring 3.3, 3.4, and 3.5 respectively.
-  
-    ![items](https://github.com/trow-land/Data-Science/blob/main/Amazon_reviews/plots/worst_reviewed_items.png)
-   
 
-5. **Distribution of Discounts**:
-   - Majority of products fall within the 40-60% discount range.
-   - A distinct spike at 0% discounts.
-
-     
-   ![Discount Histogram](https://github.com/trow-land/Data-Science/blob/main/Amazon_reviews/plots/number%20of%20ratings%20per%20discount%20bracket.png)
-
-6. **Relationship Between Discounts and Ratings**:
-   - There is a slight negative correlation between discount percentage and ratings.
-
-     
-   ![Discount vs Rating Scatter Plot](https://github.com/trow-land/Data-Science/blob/main/Amazon_reviews/plots/rating%20vs%20discount%20percentage%23.png)
-  
-
-7. **Pricing Trends**:
-   - Cheaper products receive more ratings but have more varied scores.
-   - The more expensive products in this dataset all have ratings distributed around 4.25/5.
-  
-     
-     ![Price vs Rating Count](https://github.com/trow-land/Data-Science/blob/main/Amazon_reviews/plots/rating%20vs%20prices.png)
-
-## Files in Repository
-- `Amazon_Sales_Report.pbix`: Power BI file for this analysis.
-- `queries.sql`: SQL queries used for data preprocessing and exploration.
-- `README.md`: This document.
-- Exported visuals as PNGs 
-
----
 
