@@ -14,6 +14,8 @@ Welcome to my Data Science Portfolio! This repository showcases some personal pr
   - Gave instight on how the accident trend has changed between 2005 and 2014.  
   - Created visuals to highlight peak accident times.
  
+![items](https://github.com/trow-land/Data-Science/blob/main/UK%20Traffic%20Accidents/images/time_of_day.png)
+ 
 ---
 
 ### **2. Amazon Sales Data Analysis**  
@@ -22,7 +24,9 @@ Welcome to my Data Science Portfolio! This repository showcases some personal pr
 - **Highlights**:  
   - Identified top-performing categories and products.  
   - Explored the relationship between discounts and customer ratings.  
-  - Created visuals for pricing trends and sales distribution.  
+  - Created visuals for pricing trends and sales distribution.
+ 
+ ![Discount vs Rating Scatter Plot](https://github.com/trow-land/Data-Science/blob/main/Amazon_reviews/plots/rating%20vs%20discount%20percentage%23.png)
 
 
 ---
@@ -33,7 +37,9 @@ Welcome to my Data Science Portfolio! This repository showcases some personal pr
 - **Highlights**:  
   - Interactive maps to visualise regional distributions.  
   - Dynamic filtering and customisable visualisations.  
-  - Comparative analysis of veteran vs non-veteran populations.  
+  - Comparative analysis of veteran vs non-veteran populations.
+ 
+![cearphilly disibility plots](https://github.com/trow-land/Data-Science/blob/main/Royal%20British%20Legion%20Interactive%20Data%20Tool/images/caerphilly_disability.png)
  
 
 ---
