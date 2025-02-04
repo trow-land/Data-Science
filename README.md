@@ -6,7 +6,17 @@ Welcome to my Data Science Portfolio! This repository showcases some personal pr
 
 ## Current Projects
 
-### **1. Amazon Sales Data Analysis**  
+### **1. Uk Road Traffic Accident Analysis**  
+- **Overview**: Analysed an Amazon sales dataset to uncover insights into sales performance, pricing trends, and customer reviews.  
+- **Tools**: Python, Pandas, Matplotlib.  
+- **Highlights**:  
+  - Identified accident trends by week and time.  
+  - Gave instight on how the accident trend has changed between 2005 and 2014.  
+  - Created visuals to highlight peak accident times.
+ 
+---
+
+### **2. Amazon Sales Data Analysis**  
 - **Overview**: Analysed an Amazon sales dataset to uncover insights into sales performance, pricing trends, and customer reviews.  
 - **Tools**: PostgreSQL, Power BI/Tableau, Python.  
 - **Highlights**:  
@@ -17,7 +27,7 @@ Welcome to my Data Science Portfolio! This repository showcases some personal pr
 
 ---
 
-### **2. Veterans & Disability Data Dashboard**  
+### **3. Veterans & Disability Data Dashboard**  
 - **Overview**: Developed an interactive dashboard using census data to analyse veteran demographics, health, and economic activity across regions in the UK.  
 - **Tools**: Pandas, GeoPandas, Panel, HoloViews.  
 - **Highlights**:  
@@ -43,9 +53,6 @@ Welcome to my Data Science Portfolio! This repository showcases some personal pr
 
 ---
 
-## Upcoming Projects
-Stay tuned for more projects, including advanced analytics and data science applications in business and sales.
 
----
 
 
