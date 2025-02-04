@@ -6,7 +6,7 @@ Welcome to my Data Science Portfolio! This repository showcases some personal pr
 
 ## Current Projects
 
-### **1. Uk Road Traffic Accident Analysis**  
+### **1. UK Road Traffic Accident Analysis**  
 - **Overview**: Analysed an Amazon sales dataset to uncover insights into sales performance, pricing trends, and customer reviews.  
 - **Tools**: Python, Pandas, Matplotlib.  
 - **Highlights**:  
