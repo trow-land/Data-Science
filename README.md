@@ -1,6 +1,6 @@
 # Data Science Portfolio
 
-Welcome to my Data Science Portfolio! This repository showcases some personal projects that demonstrate my skills in data exploration, analysis, and visualisation, using tools like Python, SQL, and BI platforms. Each project includes a brief description, objectives, tools used, and key insights.  
+This repository showcases some personal projects that demonstrate my skills in data exploration, analysis, and visualisation, using tools like Python, SQL, and BI platforms. Each project includes a brief description, objectives, tools used, and key insights.  
 
 ---
 
