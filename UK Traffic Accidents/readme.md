@@ -36,8 +36,9 @@ Initially the project will look to answer some questions such as:
 1) How does day of the week impact acccidents?
 2) How does time of day impact accidents?
 3) How have the number of accidents changed over time?
-4) How do road conditions and weather conditions effect accidents numbers and severity?
-5) Can we forecast the 2012 to 2015 data from the previous data?
+4) Can the geographic information be used to get a picture of accident hotspots?
+5) How do road conditions and weather conditions effect accidents numbers and severity?
+6) Can we forecast the 2012 to 2015 data from the previous data?
 
 The results where possible will be visualised with Matplotlib.
 
@@ -72,6 +73,16 @@ The results where possible will be visualised with Matplotlib.
   
       
 ![Top Items](https://github.com/trow-land/Data-Science/blob/main/UK%20Traffic%20Accidents/images/accidents%20over%20time.png)    
+
+
+
+4. **Can the geographic data be used to plot accident hotspots?**
+   
+    - Geographic data from the dataset can be used with Folium to show accident hotspots on the UK road network
+    - Heatmaps can be weighted with the 'Accident Severity' data column to better represent more serious accidents
+
+![heatmap](https://github.com/trow-land/Data-Science/blob/main/UK%20Traffic%20Accidents/images/bristol_accident_heatmap.png)   
+      
 
 
 
