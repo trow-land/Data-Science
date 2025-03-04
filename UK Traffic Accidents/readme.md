@@ -82,6 +82,7 @@ The results where possible will be visualised with Matplotlib.
     - Heatmaps can be weighted with the 'Accident Severity' data column to better represent more serious accidents
 
 ![heatmap](https://github.com/trow-land/Data-Science/blob/main/UK%20Traffic%20Accidents/images/bristol_accident_heatmap.png)   
+
       
 
 
