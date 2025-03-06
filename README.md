@@ -18,17 +18,16 @@ This repository showcases some personal projects that demonstrate my skills in d
  
 ---
 
-### **2. Amazon Sales Data Analysis**  
-- **Overview**: Analysed an Amazon sales dataset to uncover insights into sales performance, pricing trends, and customer reviews.  
-- **Tools**: PostgreSQL, Power BI/Tableau, Python.  
+### **2. Heart Disease Prediction**  
+- **Overview**: •	Performed exploratory data analysis to identify key risk factors and correlations in heart disease data to build and evaluated machine learning models, with Logiistic achieving and F1 score of 85% in heart disease classification.
+- **Tools**: Python, Pandas, Matplotlib.  
 - **Highlights**:  
-  - Identified top-performing categories and products.  
-  - Explored the relationship between discounts and customer ratings.  
-  - Created visuals for pricing trends and sales distribution.
+  - Identified health attributes that strongly correlate to heart disease.  
+  - Explored how feature distributions changed between genders.  
+  - Compared several ML models to perform binary classification to predict the presence of heart disease.
  
- ![Discount vs Rating Scatter Plot](https://github.com/trow-land/Data-Science/blob/main/Amazon_reviews/plots/rating%20vs%20discount%20percentage%23.png)
-
-
+ ![gendered_max_hr vs heart disease](https://github.com/trow-land/Data-Science/blob/main/Heart%20Disease/images/max%20hr%20by%20gender.png)
+ 
 ---
 
 ### **3. Veterans & Disability Data Dashboard**  
@@ -40,6 +39,20 @@ This repository showcases some personal projects that demonstrate my skills in d
   - Comparative analysis of veteran vs non-veteran populations.
  
 ![cearphilly disibility plots](https://github.com/trow-land/Data-Science/blob/main/Royal%20British%20Legion%20Interactive%20Data%20Tool/images/caerphilly_disability.png)
+
+
+---
+
+### **4. Amazon Sales Data Analysis**  
+- **Overview**: Analysed an Amazon sales dataset to uncover insights into sales performance, pricing trends, and customer reviews.  
+- **Tools**: PostgreSQL, Power BI/Tableau, Python.  
+- **Highlights**:  
+  - Identified top-performing categories and products.  
+  - Explored the relationship between discounts and customer ratings.  
+  - Created visuals for pricing trends and sales distribution.
+ 
+ ![Discount vs Rating Scatter Plot](https://github.com/trow-land/Data-Science/blob/main/Amazon_reviews/plots/rating%20vs%20discount%20percentage%23.png)
+
  
 
 ---
