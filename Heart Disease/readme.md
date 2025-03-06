@@ -43,12 +43,10 @@ The primary objectives of this project are:
 ### Exploratory Data Analysis (EDA):
 - Understand the distribution of key features.  
 - Identify correlations between features and the target variable (heart disease).  
-- Visualize trends and patterns in the data.  
+- Visualise trends and patterns in the data.  
 
 ### Feature Engineering:
 - Handle missing values and outliers.  
-- Normalize/standardize features if necessary.  
-- Create new features that may improve model performance.  
 
 ### Modeling:
 - Build predictive models to classify heart disease.  
