@@ -7,11 +7,9 @@ This project focuses on exploring the Heart Disease Dataset to uncover patterns,
 - [Dataset Overview](#dataset-overview)
 - [Objectives](#objectives)
 - [Tools and Technologies](#tools-and-technologies)
-- [Key Insights](#key-insights)
-- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
+- [Exploratory Data Analysis & Key Insights](#exploratory-data-analysis-eda)
 - [Modeling](#modeling)
 - [Conclusion](#conclusion)
-- [Future Work](#future-work)
 
 ## Introduction
 Heart disease is one of the leading causes of death globally. Early detection and understanding of the factors contributing to heart disease can significantly improve patient outcomes. This project aims to perform an in-depth Exploratory Data Analysis (EDA) on the Heart Disease Dataset to identify trends, correlations, and patterns. Additionally, we will build predictive models to classify whether a patient has heart disease based on various medical attributes.
@@ -63,50 +61,41 @@ The primary objectives of this project are:
 - **Matplotlib/Seaborn**: Data visualization  
 - **Scikit-learn**: Machine learning modeling and evaluation  
 
-## Key Insights
-### Age Distribution:
-- The dataset contains patients ranging from 29 to 77 years old.  
-- The majority of patients are between 40 and 60 years old.  
+## Exploratory Data Analysis & Key Insights
 
-### Gender Distribution:
-- The dataset is predominantly male, with a smaller proportion of female patients.  
+### Age Distribution
+- Patients range from **29 to 77 years old**, with most between **50 and 65**.
+- **Weak correlation (0.23) with heart disease**, meaning age alone is not a strong predictor.
 
-### Chest Pain Types:
-- Chest pain type (`cp`) is categorized into four types, with type 4 being the most common among patients with heart disease.  
+### Gender Distribution
+- The dataset is **predominantly male** (approx. **2:1 ratio**).
+- **Weak correlation (0.24) with heart disease**, meaning gender alone is not highly predictive.
 
-### Resting Blood Pressure:
-- Patients with higher resting blood pressure (`trestbps`) are more likely to have heart disease.  
+### Chest Pain Types (`cp`)
+- **Strongest positive correlation (0.41) with heart disease**.
+- **Type 4 (asymptomatic) is the most common among heart disease patients**, suggesting many may not experience typical symptoms.
 
-### Cholesterol Levels:
-- Higher serum cholesterol levels (`chol`) are associated with a higher likelihood of heart disease.  
+### Resting Blood Pressure (`trestbps`)
+- **Weak correlation (0.15) with heart disease**, meaning high blood pressure alone is not a strong predictor.
 
-### Maximum Heart Rate:
-- Patients with a lower maximum heart rate (`thalach`) are more likely to have heart disease.  
+### Cholesterol Levels (`chol`)
+- **Very weak correlation (0.08) with heart disease**.
+- Cholesterol levels increase with age, but high cholesterol alone is **not a strong predictor**.
 
-### Exercise-Induced Angina:
-- Patients who experience exercise-induced angina (`exang`) are more likely to have heart disease.  
+### Maximum Heart Rate (`thalach`)
+- **Strong negative correlation (-0.42) with heart disease**.
+- Patients with heart disease tend to have a **lower maximum heart rate**, indicating possible cardiovascular impairment.
 
-## Exploratory Data Analysis (EDA)
-### 1. Age Distribution
-- Heart disease is more prevalent in older age groups, particularly between 40 and 60 years old.  
+### ST Depression (`oldpeak`)
+- **Strongest predictor (0.50 correlation) of heart disease**.
+- Higher `oldpeak` values suggest greater ischemia and **a higher likelihood of heart disease**.
 
-### 2. Gender Distribution
-- The dataset is skewed towards male patients, with a higher proportion of males having heart disease compared to females.  
+### Exercise-Induced Angina (`exang`)
+- **Moderate correlation (0.40) with heart disease**.
+- Patients who experience angina during exercise are more likely to have heart disease.
 
-### 3. Chest Pain Types
-- Chest pain type 4 (asymptomatic) is the most common among patients with heart disease, suggesting that many patients may not experience typical chest pain symptoms.  
-
-### 4. Resting Blood Pressure
-- Patients with higher resting blood pressure are more likely to have heart disease, indicating that hypertension is a significant risk factor.  
-
-### 5. Cholesterol Levels
-- Higher cholesterol levels are associated with a higher likelihood of heart disease, emphasizing the importance of managing cholesterol levels.  
-
-### 6. Maximum Heart Rate
-- Patients with a lower maximum heart rate during exercise are more likely to have heart disease, suggesting that reduced cardiovascular fitness may be a risk factor.  
-
-### 7. Exercise-Induced Angina
-- Patients who experience angina during exercise are more likely to have heart disease, indicating that exercise-induced symptoms are a strong predictor of heart disease.  
+### Slope of ST Segment (`slope`)
+- **Moderate correlation (0.38) with heart disease**.
 
 ## Modeling
 ### 1. Logistic Regression
