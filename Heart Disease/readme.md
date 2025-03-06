@@ -47,7 +47,7 @@ The primary objectives of this project are:
 - Handle missing values and outliers.  
 
 ### Modeling:
-- Build predictive models to classify heart disease.  
+- Build predictive models for binary classification of heart disease.  
 - Evaluate model performance using metrics such as accuracy, precision, recall, and F1-score.  
 - Compare different machine learning algorithms (e.g., Logistic Regression, Random Forest, SVM).  
 
