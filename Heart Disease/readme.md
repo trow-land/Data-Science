@@ -12,7 +12,7 @@ This project focuses on exploring the Heart Disease Dataset to uncover patterns,
 - [Conclusion](#conclusion)
 
 ## Introduction
-Heart disease is one of the leading causes of death globally. Early detection and understanding of the factors contributing to heart disease can significantly improve patient outcomes. This project aims to perform an in-depth Exploratory Data Analysis (EDA) on the Heart Disease Dataset to identify trends, correlations, and patterns. Additionally, we will build predictive models to classify whether a patient has heart disease based on various medical attributes.
+Heart disease is one of the leading causes of death globally. Early detection and understanding of the factors contributing to heart disease can significantly improve patient outcomes. This project aims to perform an in-depth Exploratory Data Analysis (EDA) on the Heart Disease Dataset to identify trends, correlations, and patterns. Additionally, I used predictive models to classify whether a patient has heart disease based on various medical attributes.
 
 ## Dataset Overview
 - **Source:** [UCI Machine Learning Repository - Heart Disease Dataset](https://archive.ics.uci.edu/dataset/45/heart+disease)
