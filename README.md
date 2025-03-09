@@ -68,7 +68,7 @@ This repository showcases some personal projects that demonstrate my skills in d
 - Each project folder contains:  
   - Python scripts or SQL queries for analysis.  
   - Data visualisations and reports.  
-  - Documentation on methodology and findings.  
+  - Documentation on methodology and findings. 
 
 ---
 
