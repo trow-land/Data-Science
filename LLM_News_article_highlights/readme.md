@@ -2,53 +2,82 @@
 
 ## Overview
 
-This project focuses tune a model to make concise, one- or two-sentence highlights using a pre-trained large language model from CNN and dailymail news articles. The project evaluates the performance of a base summarisation model on a dataset of news articles and compares its summaries to human-written highlights.
+This project focuses on fine-tuning a pre-trained BART large language model to generate concise, one- or two-sentence highlights from CNN and DailyMail news articles. The goal is to improve the model’s ability to summarise lengthy articles while maintaining key information. The project evaluates the performance of the fine-tuned model using the ROUGE metric and compares its generated summaries to human-written highlights.
 
 ## Project Structure
 
-- **News_article_highlights.ipynb**: Jupyter notebook containing the implementation for generating summaries of news articles using a pre-trained language model. It includes preprocessing, tokenization, summary generation, and result evaluation.
-- **dataset**: The dataset used for this project was the [CNN_DailyMail](https://huggingface.co/datasets/abisee/cnn_dailymail) dataset from huggingface
+- **News_article_highlights.ipynb**: Jupyter notebook containing the implementation for generating summaries of news articles using a pre-trained language model. It includes data loading, preprocessing, tokenisation, fine-tuning, summary generation, and result evaluation.
+- **dataset**: The dataset used for this project is the [CNN_DailyMail](https://huggingface.co/datasets/abisee/cnn_dailymail) dataset from Hugging Face.
 
 ## Dataset
 
-The dataset consists of a collection of news articles and their respective human-written highlights. The documentation describes the highlights as short summaries as written by the article author and that the dataset was created in an attempt to teach LLMs to summarise large inputs of text into 1 or 2 sentences.
+The dataset consists of a collection of news articles and their respective human-written highlights. The highlights are short summaries written by the article authors and serve as ground truth references. The dataset was created to train large language models to summarise long text inputs into brief, informative highlights.
 
 - **Articles**: Full-length news articles used as input.
-- **Highlights**: The human-written summaries used for evaluation and comparison with the model's output.
+- **Highlights**: Human-written summaries used for evaluation and comparison with the model's output.
+
+### Dataset Statistics:
+- **Training Samples**: 287,113
+- **Validation Samples**: 13,368
+- **Test Samples**: 11,490
 
 ## Requirements
 
 To run the project, you'll need the following Python libraries installed:
 
-- `transformers`: For loading the pre-trained language model.
+- `transformers`: For loading and fine-tuning the pre-trained language model.
 - `datasets`: For loading and managing the dataset.
-- `torch`: For PyTorch backend operations.
+- `torch`: For tensor operations and model training.
+- `evaluate`: For calculating metrics such as ROUGE.
+- `tqdm`: For progress bars.
+- `pandas`: For data manipulation.
 
 ## Model Used
 
-The project utilises a pre-trained language model from the Hugging Face library for text summarisation. Specifically:
+The project utilises a pre-trained BART model from the Hugging Face library for text summarisation. Specifically:
 
-- **Model**: `BartForConditionalGeneration.from_pretrained("facebook/bart-large-cnn")`
-- **Tokenizer**: `AutoTokenizer.from_pretrained("facebook/bart-large-cnn")`
+- **Model**: `facebook/bart-large-cnn`
+- **Tokenizer**: `facebook/bart-large-cnn`
+
+The model was chosen for its effectiveness in summarisation tasks and its ability to handle relatively long text inputs.
 
 ## Preprocessing
 
 1. **Tokenization**: Each article is tokenized using the model's tokenizer, with a maximum token length of 1024 to fit within the model's input size limits.
 2. **Truncation**: Articles that exceed the token length are truncated to ensure efficient processing.
+3. **Batch Padding**: Uses a data collator to pad and batch tokenized inputs efficiently.
 
-Initially the input dataset was tokenized to max length of 512 but that was increased to max permissable value of 1024 for BART to allow for the long input article lengths.
+> **Note:** Initially, the maximum token length was set to 512, but it was increased to 1024 to accommodate longer input articles and improve summary quality.
 
+## Fine-Tuning
 
+The model was fine-tuned using the `Trainer` API from the `transformers` library. Training parameters included:
+- Mixed-precision training (FP16) for efficiency.
+- Regular evaluation during training.
+- Batch size and learning rate chosen for balanced performance and speed.
 
 ## Evaluation
 
-After generating summaries for 100 example articles, the following metrics are used for evaluation:
+After generating summaries for the test set, the following metrics were used for evaluation:
 
-- **Comparison to Reference Highlights**: The generated summaries are compared to the human-written highlights using manual inspection and by the ROUGE metric.
+- **ROUGE-1** (Unigram overlap)
+- **ROUGE-2** (Bigram overlap)
+- **ROUGE-L** (Longest Common Subsequence)
 
-## Results
+### Results
 
-The table below provides an example of the generated summaries vs. the original highlights from the dataset:
+| **Metric**    | **Score** |
+|--------------|-----------|
+| ROUGE-1      | 0.3557    |
+| ROUGE-2      | 0.1579    |
+| ROUGE-L      | 0.2630    |
+| ROUGE-Lsum   | 0.2622    |
+
+The generated summaries often captured key points effectively, but there was some variation from the human-written highlights, resulting in moderate ROUGE scores.
+
+## Example Outputs
+
+The table below shows examples of generated summaries compared to the original highlights from the dataset:
 
 | **Article** | **Human-written Highlights** | **Model-generated Summary** |
 |-------------|------------------------------|-----------------------------|
@@ -57,20 +86,21 @@ The table below provides an example of the generated summaries vs. the original 
 
 ## Challenges
 
-- **Input Truncation**: Some articles are too long and are truncated to fit the model's input length limit. This may lead to incomplete summaries.
-- **Highlight lengths**: Upon inspection a lot of the human written article highlights are 3 or 4 sentences in length which when used in training may confuse the model as to the specific task required.
-- **Evaluation**: Condending such a long article into a few sentences is hard. Often the model will have picked out the important points but the language used might be different from that in the human written label and as such the ROUGE score is negatively affected.
+- **Input Truncation:** Long articles are truncated to fit the model’s input limit, potentially omitting relevant information.
+- **Highlight Lengths:** Some human-written highlights are longer than expected (3–4 sentences), which may confuse the model when training it to generate shorter outputs.
+- **Evaluation Limitations:** Condensing long texts into brief highlights is inherently challenging, and differences in wording negatively impact ROUGE scores despite semantic similarity.
 
 ## Future Work
 
-- Seek further opportunities for improvement by hyperparameter tuning
-- Train on a larger subset (or all) of the cnn_dailymail dataset
+- Experiment with hyperparameter tuning to improve summarisation quality.
+- Train on a larger portion or the entirety of the CNN/DailyMail dataset to enhance generalisation.
+- Explore advanced techniques like prompt engineering or model ensembling for better performance.
 
 ## Conclusion
 
-This project provides a working example of using pre-trained models for summarizing long news articles into short highlights. While the model generates readable summaries, there are areas for improvement, such as handling long inputs more effectively and improving output quality through fine-tuning.
+This project demonstrates how to fine-tune a pre-trained BART model for summarising long news articles into short highlights. While the model achieves reasonable ROUGE scores, improvements are possible through further fine-tuning and better handling of lengthy input texts.
 
 ## References
 
 - Hugging Face Transformers: [https://huggingface.co/transformers/](https://huggingface.co/transformers/)
-- CNN/Daily Mail Dataset: [https://huggingface.co/datasets/cnn_dailymail](https://huggingface.co/datasets/cnn_dailymail)
+- CNN/DailyMail Dataset: [https://huggingface.co/datasets/cnn_dailymail](https://huggingface.co/datasets/cnn_dailymail)
