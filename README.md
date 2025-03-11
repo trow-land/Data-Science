@@ -61,7 +61,6 @@ This repository showcases some personal projects that demonstrate my skills in d
   - Explored the relationship between discounts and customer ratings.  
   - Created visuals for pricing trends and sales distribution.
  
- ![Discount vs Rating Scatter Plot](https://github.com/trow-land/Data-Science/blob/main/Amazon_reviews/plots/rating%20vs%20discount%20percentage%23.png)
 
  
 
