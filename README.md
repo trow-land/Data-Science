@@ -30,7 +30,17 @@ This repository showcases some personal projects that demonstrate my skills in d
  
 ---
 
-### **3. Veterans & Disability Data Dashboard**  
+### 3. News Article Highlights Summarisation ###
+- **Overview**: Fine-tuned a pre-trained BART model to summarise news articles from the CNN and DailyMail dataset, generating concise highlights from lengthy text inputs.
+- **Tools**: Python, Hugging Face Transformers, PyTorch, ROUGE Evaluation.
+- **Highlights**:
+  - Achieved moderate ROUGE scores, with ROUGE-1 at 0.3557 and ROUGE-2 at 0.1579.
+  - Fine-tuned BART model with optimised token length to handle longer inputs.
+  - Demonstrated effective summarisation with concise and informative highlights.
+
+---
+
+### **4. Veterans & Disability Data Dashboard**  
 - **Overview**: Developed an interactive dashboard using census data to analyse veteran demographics, health, and economic activity across regions in the UK.  
 - **Tools**: Pandas, GeoPandas, Panel, HoloViews.  
 - **Highlights**:  
@@ -43,7 +53,7 @@ This repository showcases some personal projects that demonstrate my skills in d
 
 ---
 
-### **4. Amazon Sales Data Analysis**  
+### **5. Amazon Sales Data Analysis**  
 - **Overview**: Analysed an Amazon sales dataset to uncover insights into sales performance, pricing trends, and customer reviews.  
 - **Tools**: PostgreSQL, Power BI/Tableau, Python.  
 - **Highlights**:  
