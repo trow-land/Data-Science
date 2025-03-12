@@ -6,6 +6,17 @@ This repository showcases some personal projects that demonstrate my skills in d
 
 ## Current Projects
 
+### Retrieval Augmented Generation to reduce Hallucinations
+- Trivia QA Dataset
+- DPR Encoder with FAISS Retiever
+- GPT2 Generator
+
+### Chigaco Crime Data
+- 8.2 million crime data points
+- 2001 to present
+
+## Past Projects
+
 ### **1. UK Road Traffic Accident Analysis**  
 - **Overview**: Analysed an Amazon sales dataset to uncover insights into sales performance, pricing trends, and customer reviews.  
 - **Tools**: Python, Pandas, Matplotlib.  
