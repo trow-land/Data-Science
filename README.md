@@ -4,7 +4,7 @@ This repository showcases some personal projects that demonstrate my skills in d
 
 ---
 
-## Current Projects
+## Current Projects in Progress.....
 
 ### Retrieval Augmented Generation to reduce Hallucinations
 - Trivia QA Dataset
