@@ -1,0 +1,21 @@
+CREATE TABLE crimes (
+    id BIGINT PRIMARY KEY,
+    case_number VARCHAR(15) UNIQUE,
+    date TIMESTAMP,
+    block VARCHAR(50),
+    primary_type VARCHAR(50),
+    description TEXT,
+    location_description TEXT,
+    arrest BOOLEAN,
+    domestic BOOLEAN,
+    beat SMALLINT,
+    district SMALLINT,
+    ward SMALLINT,
+    community_area SMALLINT,
+    x_coordinate FLOAT,
+    y_coordinate FLOAT,
+    year SMALLINT,
+    updated_on TIMESTAMP,
+    latitude DECIMAL(9,6),
+    longitude DECIMAL(9,6)
+);
