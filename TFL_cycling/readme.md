@@ -22,11 +22,17 @@ This project demonstrates a complete ETL (Extract, Transform, Load) pipeline for
 
 ### Example Query Output
 
-> Screenshot of average journey time in hours, minutes, and seconds  
+> Distance calculation for every column (first 15 journeys shown)
 
+![first_15](https://github.com/trow-land/Data-Science/blob/main/TFL_cycling/images/first_15_journeys.png)
 
-> Distance calculation for every column  
+> Average direct distance travelled
 
+![average_dist](https://github.com/trow-land/Data-Science/blob/main/TFL_cycling/images/average_direct_distance_travelled.png)
+
+> Screenshot of average journey time in hours, minutes, and seconds
+
+![average_time](https://github.com/trow-land/Data-Science/blob/main/TFL_cycling/images/average_journey_time.png)
 
 ### Tools Used
 
@@ -40,3 +46,4 @@ This project demonstrates a complete ETL (Extract, Transform, Load) pipeline for
 
 - Aggregated visual dashboards using Streamlit or Tableau
 - Time series analysis of demand patterns by hour/day
+- improve distance calc by integrating route info
