@@ -56,7 +56,7 @@ From December 2019 onwards, most Type 3 and 4 services have been reclassified as
 
 ## Sample Visualisation
 
-
+![month_trend](https://github.com/trow-land/Data-Science/blob/main/NHS%20A%26E%20Attendances%20and%20Emergency%20Admissions/Type1_admissions_by_month.png)
 
 ---
 
