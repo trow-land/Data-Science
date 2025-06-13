@@ -4,18 +4,27 @@ This repository showcases some personal projects that demonstrate my skills in d
 
 ---
 
-## Current Projects in Progress.....
+## Current Projects in Progress
 
-### Retrieval Augmented Generation to reduce Hallucinations
-- Trivia QA Dataset  
-- DPR Encoder with FAISS Retriever  
-- GPT2 Generator  
+### Westminster Pollution Data (Python)
 
-### Chicago Crime Data
-- 8.2 million crime data points  
-- 2001 to present  
+**Project Aims:**
+- Ingest and clean multiple raw CSV files containing air quality readings from London monitoring stations  
+- Merge datasets with station metadata, parse datetime fields, and handle missing or inconsistent data  
+- Produce aggregated and rolling-average outputs suitable for further analysis  
+- Prepare cleaned data for integration with a SQL warehouse or visualisation tools
 
 ---
+
+### Chicago Crime Data (Snowflake/SQL)
+
+**Project Aims:**
+- Load over 8 million crime records (2001–present) into Snowflake to assess performance at scale  
+- Design an appropriate schema with partitioning and clustering strategies  
+- Develop SQL transformations for time-based trend analysis and spatial aggregations  
+- Explore Snowflake features such as virtual warehouses, time travel, and micro-partitioning  
+- Demonstrate best practices for building scalable, query-efficient pipelines in a cloud warehouse environment
+
 
 ## Past Projects
 
