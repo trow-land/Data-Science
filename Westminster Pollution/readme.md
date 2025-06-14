@@ -27,7 +27,7 @@ This project explores and processes air quality data collected from multiple mon
 
 *Weekly NO, NO2, and NOX concentrations at the Elizabeth Bridge site:*
 
-[Insert plot image here]
+![elizabeth_bridge_nitrous](https://github.com/trow-land/Data-Science/blob/main/Westminster%20Pollution/plots/elizabeth_bridge_nitrous.png)
 
 ## Next Steps
 
