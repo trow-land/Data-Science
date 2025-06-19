@@ -60,22 +60,3 @@ ORDER BY year, rank;
 ![top crimes](https://github.com/trow-land/Data-Science/blob/main/Chicago%20Crime%20Snowflake/images/window_func.png)
 
 
-
-
-## Folder Structure
-
-chicago_crime_snowflake/
-├── sql/
-│   ├── clean_table.sql
-|   ├── summary_tables/
-│        ├── domestic_trends.sql
-│        └── monthly_crimes.sql
-│   └── split_dataset.ipynb
-│   ├── 02_summary_queries.sql
-│   └── 03_window_analytics.sql
-├── notebooks/
-│   └── split_dataset.ipynb
-├── docs/
-│   └── metadata.md
-├── images/
-├── README.md
