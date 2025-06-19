@@ -16,7 +16,6 @@ This project involves loading, cleaning, and transforming over 8 million records
 - Snowflake (Data Warehouse)
 - SQL (Core Transformations and Aggregations)
 - Snowflake Web UI / Worksheets
-- Optional: Python + Snowflake Connector (for future automation)
 
 ## Data Overview
 
