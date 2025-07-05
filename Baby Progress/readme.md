@@ -31,7 +31,7 @@ This project analyses four months of sleep data collected using the Huckleberry 
 ### Night-Time Sleep Consolidation Over Time
 
 
-![Night Sleep Plot](figures/night_sleep_consolidation.png)
+![Night Sleep Plot](https://github.com/trow-land/Data-Science/blob/main/Baby%20Progress/plots/night_sleep_consolidation_with_smoothing.png)
 
 
 ## Notes
