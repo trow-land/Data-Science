@@ -28,7 +28,18 @@ This repository showcases some personal projects that demonstrate my skills in d
 
 ## Past Projects
 
-### **1. TFL Cycling Journeys Analysis**  
+### **1. Baby Sleep Consolidation and Nap Analysis**  
+- **Overview**: Processing and analysing the sleep data of my 4-month old daughter that was tracked on the Huckleberry app.  
+- **Tools**: Python (Pandas, Matplotlib, Seaborn)  
+- **Highlights**:  
+  - Evaluated real data from the sleeps from my daughter over he first 4 months.  
+  - Plotted the improvements in night time sleep consolidation from 10 sleep segments between 6pm to 6am down to the goal of 1 (sleeping through the night) 
+  - Quantify trends in: Night-time sleep duration, number of sleep segments per night and total nap duration per day
+
+![sleep_consolidation](https://github.com/trow-land/Data-Science/blob/main/Baby%20Progress/plots/night_sleep_consolidation_with_smoothing.png)
+
+
+### **2. TFL Cycling Journeys Analysis**  
 - **Overview**: Explored Transport for London cycling data using SQL and PostgreSQL to calculate direct distances between start and end stations using the Haversine formula.  
 - **Tools**: PostgreSQL, SQL, PostGIS (optional), Python.  
 - **Highlights**:  
@@ -40,7 +51,7 @@ This repository showcases some personal projects that demonstrate my skills in d
 
 ---
 
-### **2. UK Road Traffic Accident Analysis**  
+### **3. UK Road Traffic Accident Analysis**  
 - **Overview**: Analysed a UK road traffic accident dataset to uncover patterns in accident timing and severity.  
 - **Tools**: Python, Pandas, Matplotlib.  
 - **Highlights**:  
@@ -52,7 +63,7 @@ This repository showcases some personal projects that demonstrate my skills in d
 
 ---
 
-### **3. Heart Disease Prediction**  
+### **4. Heart Disease Prediction**  
 - **Overview**: Performed exploratory data analysis to identify key risk factors and correlations in heart disease data. Built and evaluated machine learning models, with Logistic Regression achieving an F1 score of 85% in classification.  
 - **Tools**: Python, Pandas, Matplotlib.  
 - **Highlights**:  
@@ -64,7 +75,7 @@ This repository showcases some personal projects that demonstrate my skills in d
 
 ---
 
-### **4. News Article Highlights Summarisation**  
+### **5. News Article Highlights Summarisation**  
 - **Overview**: Fine-tuned a pre-trained BART model to summarise news articles from the CNN and DailyMail dataset, generating concise highlights from lengthy text inputs.  
 - **Tools**: Python, Hugging Face Transformers, PyTorch, ROUGE Evaluation.  
 - **Highlights**:  
@@ -74,7 +85,7 @@ This repository showcases some personal projects that demonstrate my skills in d
 
 ---
 
-### **5. Veterans & Disability Data Dashboard**  
+### **6. Veterans & Disability Data Dashboard**  
 - **Overview**: Developed an interactive dashboard using census data to analyse veteran demographics, health, and economic activity across UK regions.  
 - **Tools**: Pandas, GeoPandas, Panel, HoloViews.  
 - **Highlights**:  
@@ -86,7 +97,7 @@ This repository showcases some personal projects that demonstrate my skills in d
 
 ---
 
-### **6. Amazon Sales Data Analysis**  
+### **7. Amazon Sales Data Analysis**  
 - **Overview**: Analysed an Amazon sales dataset to uncover insights into sales performance, pricing trends, and customer reviews.  
 - **Tools**: PostgreSQL, Power BI/Tableau, Python.  
 - **Highlights**:  
