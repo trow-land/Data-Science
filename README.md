@@ -6,6 +6,16 @@ This repository showcases some personal projects that demonstrate my skills in d
 
 ## Current Projects in Progress
 
+### Motor Insurance Claims Analysis (Python, Pandas, scikit-learn)
+
+**Project Aims:**
+- Analyse a large-scale insurance dataset (58,000+ rows, 40+ features) with detailed policyholder and vehicle information
+- Identify key predictors of insurance claims using exploratory data analysis and statistical summaries
+- Engineer new features from vehicle safety components, power ratings, and customer demographics
+- Train and evaluate classification models (Logistic Regression, Random Forest, XGBoost) to predict claim_status
+- Interpret model outputs to highlight actionable risk factors and safety indicators (e.g. SHAP, feature importances)
+
+
 ### Westminster Pollution Data (Python)
 
 **Project Aims:**
@@ -14,7 +24,6 @@ This repository showcases some personal projects that demonstrate my skills in d
 - Produce aggregated and rolling-average outputs suitable for further analysis  
 - Prepare cleaned data for integration with a SQL warehouse or visualisation tools
 
----
 
 ### Chicago Crime Data (Snowflake/SQL)
 
