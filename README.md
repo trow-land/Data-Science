@@ -45,7 +45,7 @@ This repository showcases some personal projects that demonstrate my skills in d
   - Plotted the improvements in night time sleep consolidation from 10 sleep segments between 6pm to 6am down to the goal of 1 (sleeping through the night) 
   - Quantify trends in: Night-time sleep duration, number of sleep segments per night and total nap duration per day
 
-![sleep_consolidation](https://github.com/trow-land/Data-Science/blob/main/Baby%20Progress/plots/night_sleep_consolidation_with_smoothing.png)
+![sleep_consolidation](https://github.com/trow-land/Data-Science/blob/main/Baby%20Sleep%20Consolidation%20and%20Nap%20Analysis/plots/night_sleep_consolidation_with_smoothing.png)
 
 
 ### **2. TFL Cycling Journeys Analysis**  
