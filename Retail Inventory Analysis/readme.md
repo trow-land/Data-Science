@@ -46,7 +46,7 @@ This can guide promotional strategies — discounts drive uptake, but should be 
 Forecasts track broad trends well but show **quarterly variance**, particularly around seasonal peaks.  
 Highlights the need to refine demand models or include external drivers (holidays, promotions, weather).  
 
-![forecast_vs_actual](plots/Forecast_vs_Actual.gif)  
+![forecast_vs_actual](plots/units_sold_vs_forecast.gif)  
 
 ---
 
