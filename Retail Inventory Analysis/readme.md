@@ -1,7 +1,13 @@
 # Retail Inventory Warehouse & Dashboard (MS SQL + Power BI)
 
+
 ### Project Overview
 End-to-end retail analytics pipeline built in **SQL Server** and visualised in **Power BI**.  
+
+- **Dataset**
+  - Synthetic Dataset containing 73000 rows
+  - Information over multiple stores and products, including attributes like sales, inventory levels, pricing, weather, promotions, and holidays.
+  - See [Kaggle](https://www.kaggle.com/datasets/anirudhchauhan/retail-store-inventory-forecasting-dataset?resource=download)
 
 - **Data Engineering**
   - Raw CSV loaded into `stg.retail_store_inventory`.
