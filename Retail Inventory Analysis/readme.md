@@ -65,7 +65,7 @@ When competitors price higher (positive gap), **our sales increase**.
 When we are more expensive (negative gap), sales fall.  
 This provides clear evidence of **price sensitivity to competitor behaviour**, helping optimise pricing strategy.  
 
-![pricegap_units](plots/PriceGap_vs_Units.gif)  
+![pricegap_units](plots/competitor_price_gap.png)  
 
 ---
 
