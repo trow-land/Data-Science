@@ -28,8 +28,24 @@ This repository showcases some personal projects that demonstrate my skills in d
 
 ## Noted Projects
 
+### **1. Retail Inventory Warehouse & Dashboard (MS SQL + Power BI)**  
+- **Overview**: Built an end-to-end mini data warehouse in SQL Server and developed an interactive Power BI dashboard to analyse retail store performance.  
+- **Tools**: SQL Server (staging + star schema), Power BI.  
+- **Highlights**:  
+  - Designed staging tables, applied data typing, and created a star schema (`dim_date`, `dim_store`, `dim_product`, `fact_inventory`).  
+  - Used `MERGE` logic to maintain clean dimensions and surrogate keys.  
+  - Created `mart.v_inventory_daily` reporting view for BI consumption.  
+  - Power BI dashboards included:  
+    - **Discount vs Units Sold** → Showed positive correlation between discount levels and sales volume.  
+    - **Units Sold vs Forecast Units** → Compared actual demand with forecasted demand, tracking error across quarters.  
+    - **Price Gap vs Units Sold** → Analysed competitive pricing influence on sales, with trendlines highlighting sensitivity.  
+  - Added slicers for interactivity (category, quarter).  
 
-### **1. Chicago Crime Data Analysis**  
+![discount_units_sold](https://github.com/trow-land/Data-Science/blob/main/Retail%20Inventory%20Analysis/plots/units_sold_vs_forecast.gif)
+
+---
+
+### **2. Chicago Crime Data Analysis**  
 - **Overview**: Loaded and analysed 8 million+ Chicago crime records (2001–present) using Snowflake to demonstrate SQL performance at scale and spatial-temporal analysis.  
 - **Tools**: Snowflake, SQL, Python.  
 - **Highlights**:  
@@ -40,8 +56,9 @@ This repository showcases some personal projects that demonstrate my skills in d
 
 ![kidnapping_trends](https://github.com/trow-land/Data-Science/blob/main/Chicago%20Crime%20Snowflake/images/Monthly_kidnappings.png)
 
+---
 
-### **2. Baby Sleep Consolidation and Nap Analysis**  
+### **3. Baby Sleep Consolidation and Nap Analysis**  
 - **Overview**: Processing and analysing the sleep data of my 4-month old daughter that was tracked on the Huckleberry app.  
 - **Tools**: Python (Pandas, Matplotlib, Seaborn)  
 - **Highlights**:  
@@ -51,8 +68,9 @@ This repository showcases some personal projects that demonstrate my skills in d
 
 ![sleep_consolidation](https://github.com/trow-land/Data-Science/blob/main/Baby%20Sleep%20Consolidation%20and%20Nap%20Analysis/night_sleep_consolidation_with_smoothing.png)
 
+---
 
-### **3. TFL Cycling Journeys Analysis**  
+### **4. TFL Cycling Journeys Analysis**  
 - **Overview**: Explored Transport for London cycling data using SQL and PostgreSQL to calculate direct distances between start and end stations using the Haversine formula.  
 - **Tools**: PostgreSQL, SQL, PostGIS (optional), Python.  
 - **Highlights**:  
@@ -64,7 +82,7 @@ This repository showcases some personal projects that demonstrate my skills in d
 
 ---
 
-### **4. UK Road Traffic Accident Analysis**  
+### **5. UK Road Traffic Accident Analysis**  
 - **Overview**: Analysed a UK road traffic accident dataset to uncover patterns in accident timing and severity.  
 - **Tools**: Python, Pandas, Matplotlib.  
 - **Highlights**:  
@@ -73,18 +91,6 @@ This repository showcases some personal projects that demonstrate my skills in d
   - Created visuals to highlight peak accident times.
  
 ![items](https://github.com/trow-land/Data-Science/blob/main/UK%20Traffic%20Accidents/images/time_of_day.png)
-
----
-
-### **5. Heart Disease Prediction**  
-- **Overview**: Performed exploratory data analysis to identify key risk factors and correlations in heart disease data. Built and evaluated machine learning models, with Logistic Regression achieving an F1 score of 85% in classification.  
-- **Tools**: Python, Pandas, Matplotlib.  
-- **Highlights**:  
-  - Identified health attributes that strongly correlate to heart disease.  
-  - Explored how feature distributions changed between genders.  
-  - Compared several ML models for binary classification.
-
-![gendered_max_hr vs heart disease](https://github.com/trow-land/Data-Science/blob/main/Heart%20Disease/images/max%20hr%20by%20gender.png)
 
 ---
 
@@ -108,15 +114,6 @@ This repository showcases some personal projects that demonstrate my skills in d
 
 ![cearphilly disibility plots](https://github.com/trow-land/Data-Science/blob/main/Royal%20British%20Legion%20Interactive%20Data%20Tool/images/caerphilly_disability.png)
 
----
-
-### **8. Amazon Sales Data Analysis**  
-- **Overview**: Analysed an Amazon sales dataset to uncover insights into sales performance, pricing trends, and customer reviews.  
-- **Tools**: PostgreSQL, Power BI/Tableau, Python.  
-- **Highlights**:  
-  - Identified top-performing categories and products.  
-  - Explored the relationship between discounts and customer ratings.  
-  - Created visuals for pricing trends and sales distribution.
 
 ---
 
