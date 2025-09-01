@@ -2,7 +2,7 @@
 WITH src AS (
   SELECT
     store_id = UPPER(LTRIM(RTRIM(store_id))),
-    region   = MAX(LTRIM(RTRIM(region)))   -- pick one value deterministically
+    region   = MAX(LTRIM(RTRIM(region))) 
   FROM stg.retail_store_inventory_typed
   GROUP BY UPPER(LTRIM(RTRIM(store_id)))
 )
@@ -29,3 +29,4 @@ WHEN NOT MATCHED THEN
   INSERT (product_id, category) VALUES (src.product_id, src.category)
 WHEN MATCHED THEN
   UPDATE SET category = src.category;
+
