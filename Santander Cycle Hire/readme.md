@@ -70,7 +70,7 @@ The first dashboard covers **1–14 January 2024** and provides:
 - **Day-of-week effect**: Wednesdays had the highest demand overall  
 - **Heatmap of peak hours**: strong morning and evening commuter peaks on weekdays  
 
-![Dashboard Screenshot](docs/dashboard_v1.png)  
+![Dashboard Screenshot](https://github.com/trow-land/Data-Science/blob/main/Santander%20Cycle%20Hire/dashboards/mvp_dashboard_png.png)  
 *(Preliminary dashboard using two weeks of data — will be expanded to cover the full dataset)*
 
 ---
