@@ -1,10 +1,16 @@
-# Data Science Portfolio
+## Current Projects in Progress
 
-This repository showcases some personal projects that demonstrate my skills in data exploration, analysis, and visualisation, using tools like Python, SQL, and BI platforms. Each project includes a brief description, objectives, tools used, and key insights.  
+### Santander Cycles Data Engineering & Analysis (PostgreSQL, PostGIS, Power BI)
+
+**Project Aims:**
+- Build a layered PostgreSQL/PostGIS warehouse (raw → staging → core → mart) to ingest, validate, and transform millions of London cycle hire journeys.
+- Implement incremental ETL pipelines with data quality checks (deduplication, referential integrity, duration and timestamp validation).
+- Enrich data with geospatial calculations (direct distances between start and end stations).
+- Develop marts to support downstream analytics: demand by station/hour, origin–destination flows, seasonal trends.
+- Orchestrate workflows with Prefect and manage transformations with dbt Core.
+- Deliver interactive dashboards in Power BI/Tableau to highlight commuter patterns, rebalancing needs, and the influence of weather/events.
 
 ---
-
-## Current Projects in Progress
 
 ### Motor Insurance Claims Analysis (Python, Pandas, scikit-learn)
 
@@ -16,19 +22,23 @@ This repository showcases some personal projects that demonstrate my skills in d
 - Interpret model outputs to highlight actionable risk factors and safety indicators (e.g. SHAP, feature importances)
 
 
-### Westminster Pollution Data (Python)
+---
 
-**Project Aims:**
-- Ingest and clean multiple raw CSV files containing air quality readings from London monitoring stations  
-- Merge datasets with station metadata, parse datetime fields, and handle missing or inconsistent data  
-- Produce aggregated and rolling-average outputs suitable for further analysis  
-- Prepare cleaned data for integration with a SQL warehouse or visualisation tools
+## Past Projects
 
+### **1. Santander Cycles Data Project (So far)**  
+- **Overview**: Initial build of a data warehouse and dashboard using Santander Cycle hire journeys (182k trips, 1–14 Jan 2024).  
+- **Tools**: PostgreSQL, PostGIS, Power BI.  
+- **Highlights**:  
+  - Created `core.stations` with geospatial points and `core.journeys` with clean trip data, weekend flag, and direct distance calculations.  
+  - Established raw, staging, core, and mart schemas with logging for reproducibility.  
+  - Built a preliminary Power BI dashboard showing commuter demand patterns, daily/weekday peaks, and average trip distances/durations.  
 
+![dashboard_preview](https://github.com/trow-land/Data-Science/blob/main/Santander%20Cycle%20Hire/dashboards/mvp_dashboard_png.png)
 
-## Noted Projects
+---
 
-### **1. Retail Inventory Warehouse & Dashboard (MS SQL + Power BI)**  
+### **2. Retail Inventory Warehouse & Dashboard (MS SQL + Power BI)**  
 - **Overview**: Built an end-to-end mini data warehouse in SQL Server and developed an interactive Power BI dashboard to analyse retail store performance.  
 - **Tools**: SQL Server (staging + star schema), Power BI.  
 - **Highlights**:  
@@ -45,7 +55,7 @@ This repository showcases some personal projects that demonstrate my skills in d
 
 ---
 
-### **2. Chicago Crime Data Analysis**  
+### **3. Chicago Crime Data Analysis**  
 - **Overview**: Loaded and analysed 8 million+ Chicago crime records (2001–present) using Snowflake to demonstrate SQL performance at scale and spatial-temporal analysis.  
 - **Tools**: Snowflake, SQL, Python.  
 - **Highlights**:  
@@ -58,19 +68,19 @@ This repository showcases some personal projects that demonstrate my skills in d
 
 ---
 
-### **3. Baby Sleep Consolidation and Nap Analysis**  
+### **4. Baby Sleep Consolidation and Nap Analysis**  
 - **Overview**: Processing and analysing the sleep data of my 4-month old daughter that was tracked on the Huckleberry app.  
 - **Tools**: Python (Pandas, Matplotlib, Seaborn)  
 - **Highlights**:  
   - Evaluated real data from the sleeps from my daughter over he first 4 months.  
-  - Plotted the improvements in night time sleep consolidation from 10 sleep segments between 6pm to 6am down to the goal of 1 (sleeping through the night) 
-  - Quantify trends in: Night-time sleep duration, number of sleep segments per night and total nap duration per day
+  - Plotted the improvements in night time sleep consolidation from 10 sleep segments between 6pm to 6am down to the goal of 1 (sleeping through the night).  
+  - Quantify trends in: Night-time sleep duration, number of sleep segments per night and total nap duration per day.
 
 ![sleep_consolidation](https://github.com/trow-land/Data-Science/blob/main/Baby%20Sleep%20Consolidation%20and%20Nap%20Analysis/night_sleep_consolidation_with_smoothing.png)
 
 ---
 
-### **4. TFL Cycling Journeys Analysis**  
+### **5. TFL Cycling Journeys Analysis**  
 - **Overview**: Explored Transport for London cycling data using SQL and PostgreSQL to calculate direct distances between start and end stations using the Haversine formula.  
 - **Tools**: PostgreSQL, SQL, PostGIS (optional), Python.  
 - **Highlights**:  
@@ -82,7 +92,7 @@ This repository showcases some personal projects that demonstrate my skills in d
 
 ---
 
-### **5. UK Road Traffic Accident Analysis**  
+### **6. UK Road Traffic Accident Analysis**  
 - **Overview**: Analysed a UK road traffic accident dataset to uncover patterns in accident timing and severity.  
 - **Tools**: Python, Pandas, Matplotlib.  
 - **Highlights**:  
@@ -94,7 +104,7 @@ This repository showcases some personal projects that demonstrate my skills in d
 
 ---
 
-### **6. News Article Highlights Summarisation**  
+### **7. News Article Highlights Summarisation**  
 - **Overview**: Fine-tuned a pre-trained BART model to summarise news articles from the CNN and DailyMail dataset, generating concise highlights from lengthy text inputs.  
 - **Tools**: Python, Hugging Face Transformers, PyTorch, ROUGE Evaluation.  
 - **Highlights**:  
@@ -104,7 +114,7 @@ This repository showcases some personal projects that demonstrate my skills in d
 
 ---
 
-### **7. Veterans & Disability Data Dashboard**  
+### **8. Veterans & Disability Data Dashboard**  
 - **Overview**: Developed an interactive dashboard using census data to analyse veteran demographics, health, and economic activity across UK regions.  
 - **Tools**: Pandas, GeoPandas, Panel, HoloViews.  
 - **Highlights**:  
@@ -113,7 +123,6 @@ This repository showcases some personal projects that demonstrate my skills in d
   - Comparative analysis of veteran vs non-veteran populations.
 
 ![cearphilly disibility plots](https://github.com/trow-land/Data-Science/blob/main/Royal%20British%20Legion%20Interactive%20Data%20Tool/images/caerphilly_disability.png)
-
 
 ---
 
