@@ -31,7 +31,7 @@
 - **Tools**: PostgreSQL, PostGIS, Power BI.  
 - **Highlights**:  
   - Created `core.stations` with geospatial points and `core.journeys` with clean trip data, weekend flag, and direct distance calculations.  
-  - Established raw, staging, core, and mart schemas with logging for reproducibility.  
+  - Established raw, staging, core, and mart schemas.
   - Built a preliminary Power BI dashboard showing commuter demand patterns, daily/weekday peaks, and average trip distances/durations.  
 
 ![dashboard_preview](https://github.com/trow-land/Data-Science/blob/main/Santander%20Cycle%20Hire/dashboards/mvp_dashboard_png.png)
