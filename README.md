@@ -1,6 +1,6 @@
 ## Current Projects in Progress
 
-### Santander Cycles Data Engineering & Analysis (PostgreSQL, PostGIS, Power BI)
+### [Santander Cycles Data Engineering & Analysis](https://github.com/trow-land/Data-Science/tree/main/Santander%20Cycle%20Hire) (PostgreSQL, PostGIS, Power BI)
 
 **Project Aims:**
 - Build a layered PostgreSQL/PostGIS warehouse (raw → staging → core → mart) to ingest, validate, and transform millions of London cycle hire journeys.
@@ -38,7 +38,7 @@
 
 ---
 
-### **2. Retail Inventory Warehouse & Dashboard (MS SQL + Power BI)**  
+### **2. [Retail Inventory Warehouse & Dashboard](https://github.com/trow-land/Data-Science/tree/main/Retail%20Inventory%20Analysis) (MS SQL + Power BI)**  
 - **Overview**: Built an end-to-end mini data warehouse in SQL Server and developed an interactive Power BI dashboard to analyse retail store performance.  
 - **Tools**: SQL Server (staging + star schema), Power BI.  
 - **Highlights**:  
