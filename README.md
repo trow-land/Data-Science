@@ -26,7 +26,7 @@
 
 ## Past Projects
 
-### **1. Santander Cycles Data Project (So far)**  
+### **1. [Santander Cycles Data Engineering & Analysis](https://github.com/trow-land/Data-Science/tree/main/Santander%20Cycle%20Hire) (So far)**  
 - **Overview**: Initial build of a data warehouse and dashboard using Santander Cycle hire journeys (182k trips, 1–14 Jan 2024).  
 - **Tools**: PostgreSQL, PostGIS, Power BI.  
 - **Highlights**:  
