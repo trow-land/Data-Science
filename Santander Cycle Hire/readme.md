@@ -20,14 +20,14 @@ The repository will continue to expand as more data and technologies are introdu
 
 ### Database Design
 
-The project uses a **layered warehouse architecture**, with each schema serving a clear purpose. This mirrors how modern data engineering teams structure their pipelines, making it easier to maintain, test, and extend.
+The project uses a **layered warehouse architecture**, with each schema serving a clear purpose. This mirrors how data engineering teams structure their pipelines, making it easier to maintain, test, and extend.
 
 #### Schemas
 
 - **`raw`**  
   - Stores source CSVs exactly as received.  
   - Columns are kept as text to avoid early parsing errors.  
-  - Acts as the “source of truth” layer – never modified, only appended.  
+  - Acts as the “source of truth” layer which never gets modified.
 
 - **`staging`**  
   - Applies light cleaning and consistent naming.  
@@ -39,7 +39,7 @@ The project uses a **layered warehouse architecture**, with each schema serving 
   - Contains validated, deduplicated and enriched tables.  
   - **Tables include:**  
     - `core.stations`: one row per station with ID, name, lat/lon, and a `GEOGRAPHY(Point, 4326)` column (PostGIS) for spatial queries.  
-    - `core.journeys`: one row per trip with `rental_id`, timestamps, duration, station references, weekend flag, start hour, and straight-line trip distance (`distance_m`).  
+    - `core.journeys`: one row per trip with `journey_id`, timestamps, duration, station references, weekend flag, start hour, and straight-line trip distance (`distance_m`).  
   - Enforces basic data quality rules:  
     - `duration_s > 0`  
     - `end_time >= start_time`  
@@ -53,8 +53,6 @@ The project uses a **layered warehouse architecture**, with each schema serving 
 
 - **`etl`**  
   - Metadata tables used for pipeline tracking.  
-  - `etl.load_history` records file name, row counts, load status, and timestamps for each ingested CSV.  
-  - Makes the pipeline repeatable and auditable.  
 
 ---
 
